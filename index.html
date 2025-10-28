@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,19 +11,20 @@
 </head>
 <body class="bg-neutral-900 text-white">
     <div class="flex flex-col min-h-screen">
-            <header class="fixed top-0 left-0 w-full flex justify-between items-center py-4 px-40 bg-neutral-900 shadow-[0_3px_20px_-6px_rgba(125,211,252,0.4)] backdrop-blur-md z-50">
-                <h1 class=" font-bold text-2xl bg-gradient-to-b from-sky-300 to-sky-700 text-transparent bg-clip-text">Meu Portfólio</h1>
+        <header class="fixed top-0 left-0 w-full flex justify-between items-center py-4 px-40 bg-neutral-900 shadow-[0_3px_14px_-6px_rgba(125,211,252,0.4)] backdrop-blur-md z-50">
+            <h1 class=" font-bold text-2xl bg-gradient-to-b from-sky-300 to-sky-700 text-transparent bg-clip-text">Meu Portfólio</h1>
 
-                <nav class="flex">
-                    <ul class="flex gap-6">
-                        <li><a href="#inicio" class="flex hover:text-sky-500 hover:underline hover:underline-offset-8 font-semibold duration-300 transition-all">Início</a></li>
-                        <li><a href="#sobremim" class="flex hover:text-sky-500 hover:underline hover:underline-offset-8 font-semibold duration-300 transition-all">Sobre Mim</a></li>
-                        <li><a href="" class="flex hover:text-sky-500 hover:underline hover:underline-offset-8 font-semibold duration-300 transition-all">Projetos</a></li>
-                        <li><a href="" class="flex hover:text-sky-500 hover:underline hover:underline-offset-8 font-semibold duration-300 transition-all">Contato</a></li>
-                    </ul>
-                </nav>
+            <nav class="flex">
+                <ul class="flex gap-6">
+                    <li><a href="#inicio" class="flex hover:text-sky-500 hover:underline hover:underline-offset-8 font-semibold duration-300 transition-all">Início</a></li>
+                    <li><a href="#sobremim" class="flex hover:text-sky-500 hover:underline hover:underline-offset-8 font-semibold duration-300 transition-all">Sobre Mim</a></li>
+                    <li><a href="#habilidades" class="flex hover:text-sky-500 hover:underline hover:underline-offset-8 font-semibold duration-300 transition-all">Habilidades</a></li>
+                    <li><a href="#projetos" class="flex hover:text-sky-500 hover:underline hover:underline-offset-8 font-semibold duration-300 transition-all">Projetos</a></li>
+                    <li><a href="" class="flex hover:text-sky-500 hover:underline hover:underline-offset-8 font-semibold duration-300 transition-all">Contato</a></li>
+                </ul>
+            </nav>
 
-            </header>
+        </header>
 
         <main class="flex flex-col">
             <section id="inicio" class="flex justify-between items-center h-screen px-40 pt-20">
@@ -48,10 +49,10 @@
                 </div>
             </section>
 
-            <section class="flex flex-col px-40">
-                <h1 id="sobremim" class="text-center text-3xl font-bold">Sobre Mim</h1>
+            <section id="sobremim" class="flex flex-col px-40 py-10 scroll-mt-20">
+                <h1 class="text-center text-3xl font-bold">Sobre Mim</h1>
                 <div class="flex items-center justify-center mt-12">
-                    <div class="flex flex-col w-[800px] rounded-lg p-8 gap-4 text-lg text-justify bg-neutral-900 shadow-[0_2px_20px_-6px_rgba(125,211,252,0.4)] backdrop-blur-md">
+                    <div class="flex flex-col w-[800px] rounded-lg p-8 gap-4 text-lg text-justify bg-neutral-900 shadow-[0_2px_14px_-6px_rgba(125,211,252,0.4)] backdrop-blur-md">
                         <p class="">Meu nome é Gabriel, tenho 18 anos, atualmente estou fazendo faculdade de Ciência da Computação (2º Periodo) e sigo buscando aprender cada vez mais sobre a área.</p>
                         <p class="">Estou constantemente estudando e buscando expandir meus conhecimentos na área de TI, porém, atualmente estou focando no Frontend, que é a área em que mais me identifiquei.</p>
                         <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus a aut soluta, libero labore consectetur voluptate voluptatem assumenda sint non aspernatur dolore sunt doloribus ad nesciunt fuga quibusdam iusto architecto.</p>
@@ -59,89 +60,142 @@
                     </div>
                 </div>
 
-                <h1 class="text-center text-3xl font-bold mt-16">Minhas Habilidades</h1>
+                <h1 id="habilidades" class="text-center text-3xl font-bold mt-16 scroll-mt-24">Minhas Habilidades</h1>
+                <p class="text-center text-neutral-300 mt-2">Aqui estão as tecnologias que eu sei e utilizo para produzir meus sites.</p>
 
-                <div class="flex justify-center flex-wrap px-40 gap-6 mt-12">
-                    <div class="flex items-center justify-center bg-neutral-800 w-[130px] h-[130px] border-2 border-neutral-700 hover:border-sky-500 rounded-lg shadow-lg hover:scale-105 duration-200">
-                        <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"  alt="HTML5" class="w-[80px] h-[80px]"/>
+                <div class="grid grid-cols-3 gap-8 mt-8">
+                    <!-- card html -->
+                    <div class="flex flex-col p-8 bg-neutral-800 w-full hover:border-sky-500 rounded-lg shadow-lg hover:scale-105 duration-200">
+                        <div class="w-16 h-16 bg-red-500/10 p-3 rounded-full flex items-center justify-center mb-6">
+                            <i class="fa-brands fa-html5 text-red-500 text-3xl"></i>
+                        </div>
+                        <p class="text-lg font-bold mb-4">HTML5</p>
+                        <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                            <div class="w-[95%] h-full bg-gradient-to-r from-blue-600 to-violet-700 rounded-full"></div>
+                        </div>
                     </div>
+                    <!-- card css -->
+                    <div class="flex flex-col p-8 bg-neutral-800 w-full hover:border-sky-500 rounded-lg shadow-lg hover:scale-105 duration-200">
+                        <div class="w-16 h-16 bg-blue-500/10 p-3 rounded-full flex items-center justify-center mb-6">
+                            <i class="fa-brands fa-css3-alt text-blue-500 text-3xl"></i>
+                        </div>
+                        <p class="text-lg font-bold mb-4">CSS3</p>
+                        <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                            <div class="w-[70%] h-full bg-gradient-to-r from-blue-600 to-violet-700 rounded-full"></div>
+                        </div>
+                    </div>
+                    <!-- card tailwind -->
+                    <div class="flex flex-col p-8 bg-neutral-800 w-full hover:border-sky-500 rounded-lg shadow-lg hover:scale-105 duration-200">
+                        <div class="w-16 h-16 bg-sky-500/10 p-3 rounded-full flex items-center justify-center mb-6">
+                            <i class="fa-brands fa-tailwind-css text-sky-500 text-3xl"></i>
+                        </div>
+                        <p class="text-lg font-bold mb-4">Tailwind CSS</p>
+                        <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                            <div class="w-[40%] h-full bg-gradient-to-r from-blue-600 to-violet-700 rounded-full"></div>
+                        </div>
+                    </div>
+                    <!-- card javascript -->
+                    <div class="flex flex-col p-8 bg-neutral-800 w-full hover:border-sky-500 rounded-lg shadow-lg hover:scale-105 duration-200">
+                        <div class="w-16 h-16 bg-yellow-500/10 p-3 rounded-full flex items-center justify-center mb-6">
+                            <i class="fa-brands fa-js text-yellow-500 text-3xl"></i>
+                        </div>
+                        <p class="text-lg font-bold mb-4">JavaScript</p>
+                        <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                            <div class="w-[5%] h-full bg-gradient-to-r from-blue-600 to-violet-700 rounded-full"></div>
+                        </div>
+                    </div>
+                    <!-- card react -->
+                    <div class="flex flex-col p-8 bg-neutral-800 w-full hover:border-sky-500 rounded-lg shadow-lg hover:scale-105 duration-200">
+                        <div class="w-16 h-16 bg-blue-400/10 p-3 rounded-full flex items-center justify-center mb-6">
+                            <i class="fa-brands fa-react text-blue-400 text-3xl"></i>
+                        </div>
+                        <p class="text-lg font-bold mb-4">React</p>
+                        <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                            <div class="w-[0%] h-full bg-gradient-to-r from-blue-600 to-violet-700 rounded-full"></div>
+                        </div>
+                    </div>
+                    <!-- card responsivo -->
+                    <div class="flex flex-col p-8 bg-neutral-800 w-full hover:border-sky-500 rounded-lg shadow-lg hover:scale-105 duration-200">
+                        <div class="w-16 h-16 bg-purple-500/10 p-3 rounded-full flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-desktop text-purple-500 text-3xl"></i>
+                        </div>
+                        <p class="text-lg font-bold mb-4">Design Responsívo</p>
+                        <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                            <div class="w-[25%] h-full bg-gradient-to-r from-blue-600 to-violet-700 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                    <div class="flex items-center justify-center bg-neutral-800 w-[130px] h-[130px] border-2 border-neutral-700 hover:border-sky-500 rounded-lg shadow-lg hover:scale-105 duration-200">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS3" class="w-[80px] h-[80px]"/>
+                <section class="flex flex-col px-40">
+                    <h1 id="projetos" class="text-center text-3xl font-bold mt-20">Meus Projetos</h1>
+                    <p class="text-center text-neutral-300 mt-2">Alguns projetos feito por mim recentemente.</p>
+                    <div class="grid grid-cols-3 mt-8 mb-8 justify-items-center ">
+                            <!-- card fasttrips -->
+                        <div class="bg-neutral-800 w-[360px] h-[450px] overflow-hidden p-4 rounded-xl shadow-sm hover:scale-[102%] hover:shadow-sky-300 duration-200 flex flex-col justify-between">
+                             <img src="assets/fast trips.jpeg" alt="fasttrips" class="w-full h-48 rounded-sm">
+                             <p class="font-semibold text-xl mt-4">FastTrips</p>
+                             <p class="text-neutral-400 mt-2 text-sm">Um site de viagens que foi desenvolvido em uma matéria da faculdade.</p>
+                            <div class="flex gap-2 mt-4">
+                                 <button class="bg-neutral-900 px-2 py-1 rounded-full text-xs text-neutral-400">HTML5</button>
+                                 <button class="bg-neutral-900 px-2 py-1 rounded-full text-xs text-neutral-400">CSS3</button>
+                                <button class="bg-neutral-900 px-2 py-1 rounded-full text-xs text-neutral-400">Tailwind CSS</button>
+                            </div>
+                            <div class="flex mt-8 gap-4">
+                                <a href="https://fast-trips.vercel.app/" target="_blank" class="flex items-center hover:bg-sky-600 bg-sky-500 text-gray-100 duration-200 shadow-md py-2 px-4 rounded-md text-sm">Acessar Projeto</a>
+                                <a href="https://github.com/gabrielmaaia/FastTrips" target="_blank" class="flex items-center bg-gray-200 hover:bg-gray-400 text-black duration-200 shadow-md py-2 px-4 rounded-md text-sm">Acessar Repositório</a>
+                            </div>
+                        </div>
+                            <!-- card portfolio -->
+                        <div class="bg-neutral-800 w-[360px] h-[450px] overflow-hidden p-4 rounded-xl shadow-sm hover:scale-[102%] hover:shadow-sky-300 duration-200 flex flex-col justify-between">
+                            <img src="assets/portfolio.png" alt="Portfólio" class="w-full h-48 rounded-sm">
+                            <p class="font-semibold text-xl mt-4">Portfólio</p>
+                            <p class="text-neutral-400 mt-2 text-sm">Site desenvolvido por mim para monstrar meus conhecimentos e para uma matéria da faculdade.</p>
+                            <div class="flex gap-2 mt-4">
+                                <button class="bg-neutral-900 px-2 py-1 rounded-full text-xs text-neutral-400">HTML5</button>
+                                <button class="bg-neutral-900 px-2 py-1 rounded-full text-xs text-neutral-400">CSS3</button>
+                                <button class="bg-neutral-900 px-2 py-1 rounded-full text-xs text-neutral-400">Tailwind CSS</button>
+                                <button class="bg-neutral-900 px-2 py-1 rounded-full text-xs text-neutral-400">JavaScript</button>
+                            </div>
+                            <div class="flex mt-8 gap-4">
+                                <a href="#inicio"  class="flex items-center hover:bg-sky-600 bg-sky-500 text-gray-100 duration-200 shadow-md py-2 px-4 rounded-md text-sm">Acessar Projeto</a>
+                                <a href="https://github.com/gabrielmaaia/Portfolio" target="_blank" class="flex items-center  bg-gray-200 hover:bg-gray-400 text-black duration-200 shadow-md py-2 px-4 rounded-md text-sm">Acessar Repositório</a>
+                            </div>
+                        </div>
+
+                            <!-- card vazio -->
+                        <div class="bg-neutral-800 w-[360px] h-[450px] overflow-hidden p-4 rounded-xl shadow-sm hover:scale-[102%] hover:shadow-sky-300 duration-200 flex flex-col justify-between">
+                            <img src="assets/portfolio.png" alt="Portfólio" class="w-full h-48 rounded-sm">
+                            <p class="font-semibold text-xl mt-4">Portfólio</p>
+                            <p class="text-neutral-400 mt-2 text-sm">Site desenvolvido por mim para monstrar meus conhecimentos e para uma matéria da faculdade.</p>
+                            <div class="flex gap-2 mt-4">
+                                <button class="bg-neutral-900 px-2 py-1 rounded-full text-xs text-neutral-400">HTML5</button>
+                                <button class="bg-neutral-900 px-2 py-1 rounded-full text-xs text-neutral-400">CSS3</button>
+                                <button class="bg-neutral-900 px-2 py-1 rounded-full text-xs text-neutral-400">Tailwind CSS</button>
+                                <button class="bg-neutral-900 px-2 py-1 rounded-full text-xs text-neutral-400">JavaScript</button>
+                            </div>
+                            <div class="flex mt-8 gap-4">
+                                <a href="https://fast-trips.vercel.app/" target="_blank" class="flex items-center hover:bg-sky-600 bg-sky-500 text-gray-100 duration-200 shadow-md py-2 px-4 rounded-md text-sm">Acessar Projeto</a>
+                                <a href="https://github.com/gabrielmaaia/Portfolio" target="_blank" class="flex items-center  bg-gray-200 hover:bg-gray-400 text-black duration-200 shadow-md py-2 px-4 rounded-md text-sm">Acessar Repositório</a>
+                            </div>
+                        </div>
+                    
                     </div>
                     
-                    <div class="flex items-center justify-center bg-neutral-800 w-[130px] h-[130px] border-2 border-neutral-700 hover:border-sky-500 rounded-lg shadow-lg hover:scale-105 duration-200">
-                        <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind CSS" class="w-[80px] h-[80px]"/>
-                    </div>
-
-                    <div class="flex items-center justify-center bg-neutral-800 w-[130px] h-[130px] border-2 border-neutral-700 hover:border-red-500 rounded-lg shadow-lg hover:scale-105 duration-200">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" class="w-[80px] h-[80px] opacity-10"/>
-                    </div>
-
-                    <div class="flex items-center justify-center bg-neutral-800 w-[130px] h-[130px] border-2 border-neutral-700 hover:border-red-500 rounded-lg shadow-lg hover:scale-105 duration-200">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" class="w-[80px] h-[80px] opacity-10" />
-                    </div>
-
-                </div>
-
-                <h1 class="text-center text-3xl font-bold mt-20">Meus Projetos</h1>
-                <div class="flex mt-12 gap-8 mb-20 justify-center">
-                    <!-- coluna da esquerda -->
-                    <div class="flex flex-col">
-                        <!-- card fasttrips -->
-                        <div class="bg-neutral-800 w-[400px] p-4 rounded-xl shadow-sm hover:scale-105 hover:shadow-sky-300 duration-200">
-                            <img src="assets/fast trips.jpeg" alt="fasttrips" class="w-full h-48 object-cover rounded-sm">
-                            <p class="font-semibold text-xl mt-4">FastTrips</p>
-                            <p class="text-gray-300 mt-4 text-sm">HTML5, CSS3, Tailwind CSS</p>
-                            <div class="flex mt-8 gap-4">
-                                <a href="https://fast-trips.vercel.app/" class="flex items-center hover:bg-sky-600 bg-sky-500 text-gray-100 duration-200 shadow-md py-2 px-4 rounded-md text-sm">Acessar Projeto</a>
-                                <a href="https://github.com/gabrielmaaia/FastTrips" class="flex items-center  bg-gray-200 hover:bg-gray-400 text-black duration-200 shadow-md py-2 px-4 rounded-md text-sm">Acessar Repositório</a>
-                            </div>
-                        </div>
-                        <!-- card portfolio -->
-                        <div class="bg-neutral-800 w-[400px] mt-8 p-4 rounded-xl shadow-sm hover:scale-105 hover:shadow-sky-300 duration-200">
-                            <img src="" alt="" class="w-full h-48 object-cover rounded-sm">
-                            <p class="font-semibold text-xl mt-4">FastTrips</p>
-                            <p class="text-gray-300 mt-4 text-sm ">HTML5, CSS3, Tailwind CSS</p>
-                            <div class="flex mt-8 gap-4">
-                                <a href="https://fast-trips.vercel.app/" class="flex items-center hover:bg-sky-600 bg-sky-500 text-gray-100 duration-200 shadow-md py-2 px-4 rounded-md text-sm">Acessar Projeto</a>
-                                <a href="https://github.com/gabrielmaaia/FastTrips" class="flex items-center  bg-gray-200 hover:bg-gray-400 text-black duration-200 shadow-md py-2 px-4 rounded-md text-sm">Acessar Repositório</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- coluna da direta -->
-                    <div class="flex flex-col">
-
-                        <div class="bg-neutral-800 w-[400px] p-4 rounded-xl shadow-sm hover:scale-105 hover:shadow-sky-300 duration-200">
-                            <img src="assets/portfolio.png" alt="Portfólio" class="w-full h-48 object-cover rounded-sm">
-                            <p class="font-semibold text-xl mt-4">Portfólio</p>
-                            <p class="text-gray-300 mt-4 text-sm">HTML5, CSS3, Tailwind CSS, JavaScript</p>
-                            <div class="flex mt-8 gap-4">
-                                <a href="https://fast-trips.vercel.app/" class="flex items-center hover:bg-sky-600 bg-sky-500 text-gray-100 duration-200 shadow-md py-2 px-4 rounded-md text-sm">Acessar Projeto</a>
-                                <a href="https://github.com/gabrielmaaia/FastTrips" class="flex items-center  bg-gray-200 hover:bg-gray-400 text-black duration-200 shadow-md py-2 px-4 rounded-md text-sm">Acessar Repositório</a>
-                            </div>
-                        </div>
-
-                        <div class="bg-neutral-800 w-[400px] mt-8 p-4 rounded-xl shadow-sm hover:scale-105 hover:shadow-sky-300 duration-200">
-                            <img src="" alt="" class="w-full h-48 object-cover rounded-sm">
-                            <p class="font-semibold text-xl mt-4">FastTrips</p>
-                            <p class="text-gray-300 mt-4 text-sm">HTML5, CSS3, Tailwind CSS</p>
-                            <div class="flex mt-8 gap-4">
-                                <a href="https://fast-trips.vercel.app/" class="flex items-center hover:bg-sky-600 bg-sky-500 text-gray-100 duration-200 shadow-md py-2 px-4 rounded-md text-sm">Acessar Projeto</a>
-                                <a href="https://github.com/gabrielmaaia/FastTrips" class="flex items-center  bg-gray-200 hover:bg-gray-400 text-black duration-200 shadow-md py-2 px-4 rounded-md text-sm">Acessar Repositório</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-            </section>
+                </section>
             
 
         </main>
+        
+
+        <footer>
+
+            <div class="flex bg-neutral-800 w-full px-40 py-4 justify-between items-center">
+                <p class="text-sm">&copy; 2025 - Gabriel Maia</p>
+                <p class="text-sm">Produzido Por: @gabriel.maaia_</p>
+            </div>
+
+        </footer>
     </div>
 </body>
 </html>
