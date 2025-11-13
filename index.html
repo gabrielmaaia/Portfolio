@@ -29,43 +29,43 @@
         </header>
 
         <main class="flex flex-col">
-            <section id="inicio" class="flex justify-between items-center h-screen px-32 pt-20">
-                <div class="flex flex-col justify-center w-1/2">
-                    <span class="text-gray-200">Olá, Eu sou Gabriel Maia 👋</span>
+            <section id="inicio" class="flex flex-col-reverse lg:flex-row justify-between items-center h-auto lg:h-screen px-6 md:px-16 lg:px-32 pt-24 gap-10">
+                <div class="flex flex-col justify-center w-full lg:w-1/2 text-center lg:text-left">
+                    <span class="text-gray-200 text-lg">Olá, Eu sou Gabriel Maia 👋</span>
                     <div class="flex flex-col">
-                        <span class="text-6xl font-bold ">Desenvolvedor</span>
-                        <span class="text-6xl font-bold ">
+                        <span class="text-4xl md:text-5xl lg:text-6xl font-bold">Desenvolvedor</span>
+                        <span class="text-4xl md:text-5xl lg:text-6xl font-bold">
                         <span class="bg-gradient-to-r from-sky-300 to-sky-700 text-transparent bg-clip-text">Front</span>end
                         </span>
-                        <span class="mt-4 text-gray-300 w-[92%]">Estou começando na programação Frontend, nasci em Aracaju, tenho 18 anos e estou estudando para me tornar um bom programador.</span>
+                        <span class="mt-4 text-gray-300 lg:w-[92%]">Estou começando na programação Frontend, nasci em Aracaju, tenho 18 anos e estou estudando para me tornar um bom programador.</span>
                     </div>
 
-                    <div class="flex mt-6 gap-4">
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start mt-6 gap-4 ">
                         <a href="assets/Currículo_Gabriel_Maia.zip" download="Curriculo Gabriel" class="flex items-center hover:bg-sky-600 bg-sky-500 text-gray-100 hover:scale-105 duration-200 shadow-md py-2 px-4 rounded-xl text-sm">Baixar Currículo<i class="fa-solid fa-download text-lg ml-2"></i></a>
                         <a href="https://github.com/gabrielmaaia?tab=repositories" target="_blank" class="flex items-center bg-gray-200 hover:bg-gray-400 text-black hover:scale-105 duration-200 py-2 px-4 shadow-md rounded-xl text-sm">Ver Projetos<i class="fa-brands fa-github text-lg ml-2"></i></a>
                     </div>
                 </div>
 
-                <div class="flex justify-end">
-                    <img src="assets/minhafoto.png" alt="foto" class="max-w-[400px] border-sky-500 border-2 rounded-full p-6 h-auto">
+                <div class="flex justify-center lg:justify-end">
+                    <img src="assets/minhafoto.png" alt="foto" class="w-48 sm:w-64 md:w-80 lg:w-[400px] border-sky-500 border-2 rounded-full p-4 sm:p-6 h-auto transition-all duration-300">
                 </div>
             </section>
 
-            <section id="sobremim" class="flex flex-col px-32 py-10 scroll-mt-20">
+            <section id="sobremim" class="flex flex-col px-6 md:px-16 lg:px-32 py-10 scroll-mt-20">
                 <h1 class="text-center text-3xl font-bold">Sobre Mim</h1>
                 <div class="flex items-center justify-center mt-12">
-                    <div class="flex flex-col w-[800px] rounded-lg p-8 gap-4 text-lg text-justify bg-neutral-900 shadow-[0_2px_14px_-6px_rgba(125,211,252,0.4)] backdrop-blur-md">
-                        <p class="">Meu nome é Gabriel, tenho 18 anos, atualmente estou fazendo faculdade de Ciência da Computação (2º Periodo) e sigo buscando aprender cada vez mais sobre a área.</p>
-                        <p class="">Estou constantemente estudando e buscando expandir meus conhecimentos na área de TI, porém, atualmente estou focando no Frontend, que é a área em que mais me identifiquei.</p>
-                        <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus a aut soluta, libero labore consectetur voluptate voluptatem assumenda sint non aspernatur dolore sunt doloribus ad nesciunt fuga quibusdam iusto architecto.</p>
-                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cumque deleniti itaque ea, quidem inventore iure, ut quam vero nihil asperiores neque, veniam explicabo quae voluptatibus non ipsa molestias temporibus.</p>
+                    <div class="flex flex-col w-full max-w-[800px] p-6 sm:p-8 rounded-lg text-justify sm:text-lg bg-neutral-900 shadow-[0_2px_14px_-6px_rgba(125,211,252,0.4)]">
+                        <p class="">Meu nome é Gabriel, tenho 18 anos e sou estudante de Ciência da Computação. Tenho grande interesse pela área de Tecnologia da Informação e atualmente estou me especializando em Desenvolvimento Frontend.</p><br>
+                        <p class="">Gosto de transformar ideias em interfaces funcionais e modernas, buscando sempre unir design, performance e usabilidade. Estou constantemente aprendendo novas tecnologias e aprimorando minhas habilidades para me tornar um desenvolvedor cada vez mais completo.</p><br>
+                        <p class="">Valorizo o trabalho em equipe, a troca de conhecimento e a colaboração. Tenho facilidade em me comunicar e lidar com pessoas, e acredito que essas qualidades serão essenciais para meu crescimento e sucesso no mercado de trabalho.</p><br>
+                        <p class="">Meu objetivo é atuar em projetos desafiadores que me permitam evoluir profissionalmente e construir soluções que façam a diferença na vida das pessoas.</p>
                     </div>
                 </div>
 
                 <h1 id="habilidades" class="text-center text-3xl font-bold mt-16 scroll-mt-24">Minhas Habilidades</h1>
                 <p class="text-center text-neutral-300 mt-2">Aqui estão as tecnologias que eu sei e utilizo para produzir meus sites.</p>
 
-                <div class="grid grid-cols-3 gap-8 mt-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
                     <!-- card html -->
                     <div class="flex flex-col p-8 bg-neutral-800 w-full hover:border-sky-500 rounded-lg shadow-lg hover:scale-105 duration-200">
                         <div class="w-16 h-16 bg-red-500/10 p-3 rounded-full flex items-center justify-center mb-6">
@@ -150,7 +150,7 @@
                 <section class="flex flex-col px-32">
                     <h1 id="projetos" class="text-center text-3xl font-bold mt-20 scroll-mt-24">Meus Projetos</h1>
                     <p class="text-center text-neutral-300 mt-2">Alguns projetos feito por mim recentemente.</p>
-                    <div class="grid grid-cols-3 mt-8 mb-8 justify-items-center ">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 mt-8 mb-8 justify-items-center gap-8">
                             <!-- card fasttrips -->
                         <div class="bg-neutral-800 w-[360px] h-[450px] overflow-hidden p-4 rounded-xl shadow-sm hover:scale-[102%] hover:shadow-sky-300 duration-200 flex flex-col justify-between">
                              <img src="assets/fast trips.jpeg" alt="fasttrips" class="w-full h-48 rounded-sm">
@@ -183,20 +183,19 @@
                             </div>
                         </div>
 
-                            <!-- card vazio -->
+                            <!-- card academia -->
                         <div class="bg-neutral-800 w-[360px] h-[450px] overflow-hidden p-4 rounded-xl shadow-sm hover:scale-[102%] hover:shadow-sky-300 duration-200 flex flex-col justify-between">
-                            <img src="assets/portfolio.png" alt="Portfólio" class="w-full h-48 rounded-sm">
-                            <p class="font-semibold text-xl mt-4">Portfólio</p>
-                            <p class="text-neutral-400 mt-2 text-sm">Site desenvolvido por mim para monstrar meus conhecimentos e para uma matéria da faculdade.</p>
+                            <img src="assets/academia.png" alt="Portfólio" class="w-full h-48 rounded-sm">
+                            <p class="font-semibold text-xl mt-4">Dashboard Academia</p>
+                            <p class="text-neutral-400 mt-2 text-sm">Frontend do site desenvolvido por mim, para um trabalho em grupo na Faculdade.</p>
                             <div class="flex gap-2 mt-4">
-                                <button class="bg-neutral-900 px-2 py-1 rounded-full text-xs text-neutral-400">HTML5</button>
-                                <button class="bg-neutral-900 px-2 py-1 rounded-full text-xs text-neutral-400">CSS3</button>
+                                <button class="bg-neutral-900 px-2 py-1 rounded-full text-xs text-neutral-400">Next</button>
+                                <button class="bg-neutral-900 px-2 py-1 rounded-full text-xs text-neutral-400">React</button>
                                 <button class="bg-neutral-900 px-2 py-1 rounded-full text-xs text-neutral-400">Tailwind CSS</button>
-                                <button class="bg-neutral-900 px-2 py-1 rounded-full text-xs text-neutral-400">JavaScript</button>
                             </div>
                             <div class="flex mt-8 gap-4">
-                                <a href="https://fast-trips.vercel.app/" target="_blank" class="flex items-center hover:bg-sky-600 bg-sky-500 text-gray-100 duration-200 shadow-md py-2 px-4 rounded-md text-sm">Acessar Projeto</a>
-                                <a href="https://github.com/gabrielmaaia/Portfolio" target="_blank" class="flex items-center  bg-gray-200 hover:bg-gray-400 text-black duration-200 shadow-md py-2 px-4 rounded-md text-sm">Acessar Repositório</a>
+                                <a href="/" target="_blank" class="flex items-center hover:bg-sky-600 bg-sky-500 text-gray-100 duration-200 shadow-md py-2 px-4 rounded-md text-sm">Acessar Projeto</a>
+                                <a href="https://github.com/Andrelcs12/sistemapoo" target="_blank" class="flex items-center  bg-gray-200 hover:bg-gray-400 text-black duration-200 shadow-md py-2 px-4 rounded-md text-sm">Acessar Repositório</a>
                             </div>
                         </div>
                     
@@ -207,16 +206,16 @@
                 <section class="flex flex-col px-32">
                     <h1 id="contato" class="text-center text-3xl font-bold mt-20 scroll-mt-20">Contate-me</h1>
                     <p class="text-center text-neutral-300 mt-2">Entre em contato comigo por aqui!</p>
-                    <div class="flex justify-center gap-14 mt-8 mb-16">
+                    <div class="flex flex-col lg:flex-row justify-center items-center gap-10 mt-8 mb-16">
                         <!--parte da esquerda-->
-                        <div class="flex flex-col gap-6 h-[560px]">
+                        <div class="flex flex-col gap-6 w-full max-w-[320px] justify-center items-center">
                             <a href="" class="flex flex-col w-[300px] h-[170px] bg-neutral-800 rounded-lg shadow-lg p-4 justify-center text-center items-center hover:scale-[103%] duration-200">
                                 <div class="w-14 h-14 bg-gray-300/10 p-3 rounded-full flex items-center justify-center mb-6">
                                     <i class="fa-solid fa-envelope text-sky-500 text-2xl"></i>
                                 </div>
                                 <h1 class="text-lg font-semibold">Email</h1>
                                 <p class="text-gray-400 text-sm mt-1">josegabriel.jg31@gmail.com</p>
-                            </daiv>
+                            </a>
 
                             <a href="https://www.instagram.com/gabriel.maaia_/" target="_blank" class="flex flex-col w-[300px] h-[170px] bg-neutral-800 rounded-lg shadow-lg p-4 justify-center text-center items-center hover:scale-[103%] duration-200">
                                 <div class="w-14 h-14 bg-gray-300/10 p-3 rounded-full flex items-center justify-center mb-6">
@@ -236,7 +235,7 @@
                         </div>
 
                         <!--parte da direita-->
-                        <form id="formcontato" class="flex flex-col w-[700px] bg-neutral-800 rounded-lg shadow-lg p-8 h-[560px]">
+                        <form id="formcontato" class="flex flex-col w-full max-w-[700px] lg:p-8 p-8 bg-neutral-800 rounded-lg shadow-lg">
                             <h1 class="text-2xl font-bold">Formulário de Contato</h1>
                             <div class="flex flex-col mt-4">
                                 <label for="name" class="text-sm font-medium text-gray-300 mb-2">Nome:</label>
@@ -250,7 +249,7 @@
                                 <label for="msg" class="text-sm font-medium text-gray-300 mb-2">Mensagem:</label>
                                 <textarea type="text" name="msg" id="msg" rows="6" required class="resize-none w-full px-4 py-3 rounded-lg border border-gray-700 bg-black/10 outline-none focus:ring-1 ring-sky-500 focus:border-transparent"></textarea>
                             </div>
-                            <div class="flex mt-auto">
+                            <div class="flex mt-6">
                                 <button type="submit" id="submit-button" class="w-full text-center bg-sky-500 px-8 py-2 rounded-lg hover:bg-sky-700 duration-200 hover:shadow-blue-500/20">Enviar Mensagem</button>
                             </div>
 
@@ -268,7 +267,7 @@
 
         <footer>
 
-            <div class="flex bg-neutral-800 w-full px-32 py-4 justify-between items-center">
+            <div class="bg-neutral-800 w-full px-6 md:px-16 lg:px-32 py-4 flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
                 <p class="text-sm">&copy; 2025 - Gabriel Maia</p>
                 <p class="text-sm">Produzido Por: @gabriel.maaia_</p>
             </div>
