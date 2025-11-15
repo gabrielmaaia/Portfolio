@@ -3,6 +3,8 @@ const emailInput = document.querySelector("#email")
 const msgInput = document.querySelector("#msg")
 const submitButton = document.querySelector("#submit-button")
 const mensagemBox = document.querySelector("#mensagem-box")
+const nomeRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/;
+const emailRegex = /^[a-zA-Z0-9._%+-]+@(gmail|outlook|hotmail|yahoo)\.com$/;
 
 submitButton.addEventListener("click", function(e) {
     e.preventDefault();
@@ -13,13 +15,24 @@ submitButton.addEventListener("click", function(e) {
 
     if (nameValue === "" || emailValue === "" || msgValue === "") {
         showMessage("Preencha todos os campos corretamente!", "erro");
-    } else {
-        showMessage("Mensagem enviada com sucesso!", "sucesso");
-    
-        nameInput.value = "";
-        emailInput.value = "";
-        msgInput.value = "";
+        return;
     }
+
+    if (!nomeRegex.test(nameValue)) {
+        showMessage("O nome deve contar apenas letras!", "erro");
+        return;
+    }
+
+    if (!emailRegex.test(emailValue)) {
+        showMessage("Digite um email válido do Gmail, Hotmail, Outlook ou Yahoo!", "erro");
+        return;
+    }
+
+    showMessage("Mensagem enviada com sucesso!", "sucesso");
+
+    nameInput.value = ""
+    emailInput.value = ""
+    msgInput.value = ""
 });
 
 function showMessage(text, type) {
